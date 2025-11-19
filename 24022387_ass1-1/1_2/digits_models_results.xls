@@ -1,0 +1,5 @@
+﻿Model,Train size,Validation size,Test size,Hyperparameters,Best validation accuracy,Test accuracy,Precision (macro),Recall (macro),F1-score (macro),Notes
+Logistic Regression,1077,360,360,"C=0.01, penalty=L2, solver=lbfgs, multinomial",0.9722222222222222,0.9638888888888888,0.9644819275779029,0.9636507936507938,0.963676279901632,"random_state=42, no scaling"
+Decision Tree,1077,360,360,"max_depth=10, criterion=gini, min_samples_split=5",0.8555555555555555,0.8277777777777777,0.8273487444739818,0.826949806949807,0.8260098810268955,random_state=42
+KNN,1077,360,360,"k=1, weights=uniform, metric=euclidean",0.9888888888888888,0.9861111111111112,0.9865746865746866,0.985873015873016,0.985890641187982,KNN không cần random_state
+Neural Network (MLP),1077,360,360,"hidden=(100,), activation=relu, alpha=0.0001, max_iter=300",0.975,0.9888888888888889,0.9889287612971824,0.9886507936507936,0.9885980429476702,"random_state=42, no scaling"
